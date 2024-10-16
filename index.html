@@ -23,10 +23,9 @@
 <body>
 
     <div id="lottie"></div>
-    <audio  autoplay loop>
+    <audio autoplay loop>
         <source src="paytm.mp3" type="audio/ogg">
-       
-      </audio>
+    </audio>
 
     <script>
         // Load the Lottie animation
@@ -34,12 +33,14 @@
             container: document.getElementById('lottie'), 
             renderer: 'svg',
             loop: true, 
-            autoplay: true, // Set to true to autoplay
-            path: 'three.json' // Update the path to your Lottie file
+            autoplay: true, 
+            path: 'three.json' 
         });
 
         
-        
+        setTimeout(() => {
+            window.location.href = "https://bookbazaar-10gv.onrender.com"; 
+        }, 3000); 
     </script>
 </body>
 </html>
